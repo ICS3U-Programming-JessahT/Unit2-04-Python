@@ -4,10 +4,7 @@
 # Date: Sept 30, 2022
 # This program calculates the pizza cost.
 
-HST = 0.13
-LABOUR_COST = 2.00
-RENTAL_COST = 2.25
-INGRED_COST = 1.50
+import constants
 
 
 def main():
@@ -17,8 +14,8 @@ def main():
 
     # process
 
-    subtotal = LABOUR_COST + RENTAL_COST + INGRED_COST * diameter
-    tax = HST * subtotal
+    subtotal = constants.LABOUR_COST + constants.RENTAL_COST + constants.INGRED_COST * diameter
+    tax = constants.HST * subtotal
     total = subtotal + tax
 
     # output
